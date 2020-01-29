@@ -9,40 +9,40 @@
 ----- Desafio 1 - número estranho
  - Projetos 
  	- Projeto Teste.Business
-		NumeroEstranho
-			Calculo.cs
-			RetornoCalculo.cs
+		- NumeroEstranho 
+			- Calculo.cs
+			- RetornoCalculo.cs
 	- Projeto Teste.Site
-		Controller
-			HomeControler.cs
-				Index
-		Model
-			NumeroModel.cs
-		Views
-			Home
-				Index
+		- Controller
+			- HomeControler.cs
+				- Index
+		- Model
+			- NumeroModel.cs
+		- Views
+			- Home
+				- Index
 				
 				
 ----- Desafio 2 - Conexão com API
  - Projetos 
  	- Projeto Teste.Base
-		Domain
-			Cep.cs
-		Function
-			_CepsData.cs
+		- Domain
+			- Cep.cs
+		- Function
+			- _CepsData.cs
  	- Projeto Teste.Business
-		CEP
-			GerenciamentoCep.cs
-			RetornoCep.cs
+		- CEP
+			- GerenciamentoCep.cs
+			- RetornoCep.cs
 	- Projeto Teste.Site
-		Controller
-			HomeControler.cs
-				Cep
-		Model
-			CEPModel.cs
-		Views
-			Home
-				CEP
+		- Controller
+			- HomeControler.cs
+				- Cep
+		- Model
+			- CEPModel.cs
+		- Views
+			- Home
+				- CEP
 				
 								
 ----- Conexão com banco
@@ -52,8 +52,6 @@
 - Criar a Tabela CEP - arquivo CEP.sql
 - Alterar a connection string da aplicação:
 	No caminho: Codigo\Teste.Site\appsettings.Development.json
-
-
 
 
 ----- Imagens do resultado
