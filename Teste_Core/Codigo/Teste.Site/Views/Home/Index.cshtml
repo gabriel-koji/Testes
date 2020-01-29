@@ -1,0 +1,49 @@
+﻿@model Teste_Teste.Models.NumeroModel
+@{
+    ViewData["Title"] = "Números Estranhos";
+}
+    <form asp-action="Index" id="form1" enctype="multipart/form-data" method="post">
+        <div class="text-center">
+            <h1 class="display-4">Teste de Números Estranhos</h1>
+        </div>
+        <div class="text-center">
+            <br />
+            <br />
+            <span> Digite o número:</span> @Html.TextBoxFor(model => model.Numero, htmlAttributes: new { @type = "number" })
+            <button type="submit">Verificar Número</button>
+        </div>
+        <br />
+        <br />
+        @if (Model.Retorno != null)
+        {
+            <div class="text-center">
+                <h3>Resultado</h3>
+                @if (Model.Retorno.NumeroEstranho)
+                {
+                    @Html.Raw("Número Estranho - Soma = ");
+                }
+                else
+                {
+                    @Html.Raw("Número não Estranho - Soma = ");
+                }
+
+                @Html.Raw(Model.Retorno.Total + " // ")
+
+                @for (int i = 0; i < Model.Retorno.Lista.Count; i++)
+                {
+                    if (i < Model.Retorno.Lista.Count - 1)
+                    {
+                        @Html.Raw(Model.Retorno.Lista[i] + " - ");
+                    }
+                    else
+                    {
+                        @Html.Raw(Model.Retorno.Lista[i]);
+                    }
+
+                }
+
+            </div>
+        }
+    </form>
+
+

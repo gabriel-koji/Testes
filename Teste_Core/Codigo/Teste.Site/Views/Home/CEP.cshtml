@@ -1,0 +1,33 @@
+﻿@model Teste_Teste.Models.CEPModel
+@{
+    ViewData["Title"] = "CEP";
+}
+<form asp-action="CEP" id="form1" enctype="multipart/form-data" method="post">
+    <div class="text-center">
+        <h1 class="display-4">Buscar CEP</h1>
+    </div>
+    <div class="text-center">
+        <br />
+        <br />
+        <span> Digite o CEP:</span> @Html.TextBoxFor(model => model.CEP, htmlAttributes: new { })
+        <button type="submit">Verificar Cep</button>
+    </div>
+    <br />
+    <br />
+    @if (Model.Retorno != null)
+    {
+    <div class="text-center">
+        <h3>Resultado</h3>
+        CEP: @Html.Raw(Model.Retorno.Cep) <br />
+        Logradouro: @Html.Raw(Model.Retorno.logradouro)<br />
+        Complemento: @Html.Raw(Model.Retorno.complemento) <br />
+        Bairro: @Html.Raw(Model.Retorno.bairro) <br />
+        Localidade: @Html.Raw(Model.Retorno.localidade) <br />
+        UF: @Html.Raw(Model.Retorno.uf) <br />
+        Unidade: @Html.Raw(Model.Retorno.unidade) <br />
+        IBGE: @Html.Raw(Model.Retorno.ibge) <br />
+        GIA: @Html.Raw(Model.Retorno.gia)
+
+    </div>
+    }
+</form>

@@ -1,0 +1,6 @@
+C:\Users\gabriel.koji\source\repos\Teste_Altran\Altran.Business\bin\Debug\Altran.Business.dll
+C:\Users\gabriel.koji\source\repos\Teste_Altran\Altran.Business\bin\Debug\Altran.Business.pdb
+C:\Users\gabriel.koji\source\repos\Teste_Altran\Altran.Business\obj\Debug\Altran.Business.csprojAssemblyReference.cache
+C:\Users\gabriel.koji\source\repos\Teste_Altran\Altran.Business\obj\Debug\Altran.Business.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.koji\source\repos\Teste_Altran\Altran.Business\obj\Debug\Altran.Business.dll
+C:\Users\gabriel.koji\source\repos\Teste_Altran\Altran.Business\obj\Debug\Altran.Business.pdb
